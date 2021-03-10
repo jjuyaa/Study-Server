@@ -13,8 +13,8 @@ const userSchema = mongoose.Schema({
     password: {
         type: String,
         maxlength: 50
-    }
-    /*role: {
+    },
+    role: {
         type: Number,
         default: 0
     }, 
@@ -24,7 +24,7 @@ const userSchema = mongoose.Schema({
     }, 
     tokenExp: {
         type: Number
-    }*/
+    }
 })
 
 const User = mongoose.model('User', userSchema)
