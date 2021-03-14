@@ -13,6 +13,8 @@ let auth = (req, res, next) => {
 
         req.token = token
         req.user = user
+
+        // next 없으면 middleware에 갇혀있게됨
         next()
     })
 
